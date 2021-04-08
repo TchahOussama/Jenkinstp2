@@ -1,4 +1,4 @@
-pipline {
+pipeline {
    agent any
    stages {
         stage('Clean') {
@@ -10,7 +10,6 @@ pipline {
 	    steps {
 	        sh 'mvn test'
             }
-
         }
 	stage('Package') {
 	    steps {
